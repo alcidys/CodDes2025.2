@@ -1,20 +1,38 @@
 <!DOCTYPE html>
-<html lang='pt-BR'>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia - Início</title>
+</head>
+<body>
+    <header>
+        <h1>BEM VINDO AO BRASIL</h1>
+        <p>Selecione o estado em que você está:</p>
+    </header>
 
+    <main>
+        <img src="../img/bandeirabrasil.png" alt="Mapa do Brasil" width="300">
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport", content="width=device-width, initial-scale=1.0" />
-        <title>Guia para estrangeiros</title>
-    </head>
-    <body>
-        <header>
-            <h1>BEM VINDO AO BRASIL</h1>
-            <p>Digite sua localização: </p>
-            
-            <img src="bandeirabrasil.png" alt="Bandeira do Brasil" width="300">
-        </header>
+        <form action="tela_sao_paulo.html" method="get">
+            <label for="estado">Estado</label><br>
+            <select id="estado" name="estado">
+                <option value="sp">São Paulo</option>
+            </select>
+            <br><br>
+            <button type="submit">Confirmar</button>
+        </form>
+    </main>
 
-    </body>
-
+    <footer>
+        <nav>
+            <a href="popup_conversor.html">
+                <img src="../img/money.png" alt="Conversor" width="50">
+            </a>
+            <a href="perfil.html">
+                <img src="../img/user.png" alt="Perfil" width="50">
+            </a>
+        </nav>
+    </footer>
+</body>
 </html>
