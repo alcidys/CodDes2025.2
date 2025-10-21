@@ -3,23 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Explorar - Categorias</title>
+  <title>Explore - São Paulo</title>
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/style.css" />
 </head>
-<body>
-  <h1>Selecione o que deseja aproveitar</h1>
+<body class="page-city page-explore">
+  <header class="city-header">
+    <h2 class="city-sub">EXPLORE</h2>
+    <h1 class="city-title">SÃO PAULO</h1>
+  </header>
 
-  <ul>
-    <li><a href="../tela_sao_paulo.html">Bares</a></li>
-    <li><a href="../tela_sao_paulo.html">Botecos</a></li>
-    <li><a href="../tela_sao_paulo.html">Restaurantes</a></li>
-    <li><a href="../tela_sao_paulo.html">Comida de rua</a></li>
-    <li><a href="../tela_sao_paulo.html">Premiados</a></li>
-  </ul>
+  <main class="city-options">
+    <a href="tela_free_time.html" class="city-option">
+      <span class="diamond"></span>
+      <span class="label">FREE TIME</span>
+    </a>
 
-  <nav>
-    <a href="../popup_conversor.html"><img src="../../img/money.png" alt="Conversor" width="50"></a>
-    <a href="../perfil.html"><img src="../../img/user.png" alt="Perfil" width="50"></a>
-  </nav>
-  <p><a href="tela_explorar.html">Voltar</a> | <a href="../index.html">Início</a></p>
+    <a href="tela_necessities.html" class="city-option">
+      <span class="diamond"></span>
+      <span class="label">NECESSITIES</span>
+    </a>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-bar">
+      <a href="../popup_conversor.html"><img src="../../img/money.png" alt="Conversor"></a>
+      <a href="tela_sao_paulo.html" class="footer-center">return to the start</a>
+      <a href="../perfil.html"><img src="../../img/user.png" alt="Perfil"></a>
+    </div>
+  </footer>
 </body>
 </html>
