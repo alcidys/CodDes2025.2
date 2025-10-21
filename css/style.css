@@ -255,3 +255,103 @@ footer {
   .profile-name{ font-size: 2.6rem; }
   .vibe{ font-size: 2.4rem; }
 }
+
+/* ======== TELA: CURRENCY CONVERTER ======== */
+.page-converter {
+  background: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;         /* centraliza verticalmente */
+  justify-content: center;     /* centraliza horizontalmente */
+  padding: var(--space-5);
+}
+
+/* Cartão com sombra suave e bordas arredondadas */
+.converter {
+  width: min(92vw, 34rem);
+  border: 0.1rem solid rgba(0, 0, 0, 0.08);
+  border-radius: 2.4rem;
+  background: #fff;
+  padding: var(--space-5) var(--space-4);
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+
+.converter-title {
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-size: 2.2rem;
+}
+
+.converter-currency {
+  margin-top: 0.6rem;
+  color: #222;
+  font-size: 1.8rem;
+}
+
+/* Barras cinzas simulando campos */
+.conv-input {
+  margin-top: var(--space-3);
+  height: 3.6rem;
+  border: none;
+  background: #e6e6e6;
+  border-radius: 0.8rem;
+  width: 100%;
+}
+
+/* Ícone central */
+.swap {
+  margin: var(--space-4) 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+.coin {
+  width: 4.2rem;
+  height: 4.2rem;
+  border-radius: 50%;
+  border: 0.2rem solid #000;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-top: 0.6rem solid transparent;
+  border-bottom: 0.6rem solid transparent;
+}
+
+.arrow.left {
+  border-right: 1rem solid #000;
+}
+
+.arrow.right {
+  border-left: 1rem solid #000;
+}
+
+/* Link de voltar */
+.back-link {
+  margin-top: var(--space-4);
+}
+
+.text-link {
+  color: var(--text);
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 40rem) {
+  .converter-title {
+    font-size: 2.4rem;
+  }
+}
