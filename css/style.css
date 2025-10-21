@@ -1,0 +1,156 @@
+
+
+
+:root {
+  
+  --bg: #f7f7f8;
+  --surface: #ffffff;
+  --text: #222222;
+  --muted: #666666;
+  --brand: #0a7b83;
+  --brand-contrast: #ffffff;
+  --radius: 1.2rem;
+  --space-1: 0.8rem;
+  --space-2: 1.2rem;
+  --space-3: 1.6rem;
+  --space-4: 2.4rem;
+  --space-5: 3.2rem;
+  --max-w: 96rem;
+
+  --bg-hero: #d6def2;        
+  --brazil-green: #65b46a;   
+  --brazil-outline: #000000; 
+  --title-weight: 900;
+}
+
+html { font-size: 62.5%; }
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans";
+  color: var(--text);
+  line-height: 1.5;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  width: min(100% - 2 * var(--space-4), var(--max-w));
+  margin-inline: auto;
+}
+
+.stack > * + * { margin-top: var(--space-3); }
+
+button, .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  background: var(--brand);
+  color: var(--brand-contrast);
+  border: none;
+  border-radius: 0.8rem;
+  padding: 1.2rem 1.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.02s ease-in-out, filter 0.15s ease;
+}
+button:hover, .btn:hover { filter: brightness(1.05); }
+button:active, .btn:active { transform: translateY(0.1rem); }
+
+.page-home {
+  background-color: var(--bg-hero);
+}
+
+.hero {
+  background: transparent;
+}
+
+.hero-inner {
+  align-items: center;
+  text-align: center;
+  padding-top: var(--space-5);
+}
+
+.hero-title {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: var(--title-weight);
+  font-size: 2.6rem;
+}
+
+.hero-sub {
+  font-size: 1.8rem;
+  margin-top: var(--space-3);
+}
+
+.hero-card {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding-top: var(--space-5);
+}
+
+
+.page-home {
+  background-color: #d6def2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  align-items: center;       
+  min-height: 100vh;        
+}
+
+
+.hero-figure.brasil {
+  width: 100%;
+  height: 55vh; 
+  background-image: url("../img/brasil.png");
+  background-repeat: no-repeat;
+  background-position: center center; 
+  background-size: contain;
+  margin-top: 2rem; 
+}
+
+.hero-figure.brasil img {
+  width: 28rem;
+  height: auto;
+  background-color: var(--brazil-green);
+  border-radius: 1rem;
+  padding: 0.2rem;
+  filter:
+    drop-shadow(0 0 0 var(--brazil-outline))
+    drop-shadow(0 0 0.1rem var(--brazil-outline));
+}
+
+
+footer {
+  width: 100%;
+  background: transparent;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 1rem 2rem;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.footer-inner img {
+  width: 4rem;
+  height: auto;
+}
+
+.footer-center {
+  display: none; 
+}
+
+
+@media (min-width: 40rem){
+  .hero-title { font-size: 3rem; }
+  .hero-figure.brasil img { width: 34rem; }
+}

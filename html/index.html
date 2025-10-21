@@ -1,38 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guia - Início</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Guia - Início</title>
+
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/style.css" />
 </head>
-<body>
-    <header>
-        <h1>BEM VINDO AO BRASIL</h1>
-        <p>Selecione o estado em que você está:</p>
-    </header>
 
-    <main>
-        <img src="../img/bandeirabrasil.png" alt="Mapa do Brasil" width="300">
 
-        <form action="tela_sao_paulo.html" method="get">
-            <label for="estado">Cidade</label><br>
-            <select id="estado" name="estado">
-                <option value="sp">São Paulo</option>
-            </select>
-            <br><br>
-            <button type="submit">Confirmar</button>
-        </form>
-    </main>
+<body class="page-home">
+  <header class="site-header hero">
+    <div class="container header-inner hero-inner">
+      <h1 class="site-title hero-title">WELCOME TO BRAZIL</h1>
+      <p class="site-sub hero-sub">where are you?</p>
+    </div>
+  </header>
 
-    <footer>
-        <nav>
-            <a href="popup_conversor.html">
-                <img src="../img/money.png" alt="Conversor" width="50">
-            </a>
-            <a href="perfil.html">
-                <img src="../img/user.png" alt="Perfil" width="50">
-            </a>
-        </nav>
-    </footer>
+  <main class="site-main">
+    <div class="container card hero-card">
+      <figure class="figure hero-figure">
+        <img src="../img/brasil.png" alt="Mapa do Brasil" />
+      </figure>
+
+      
+      <form action="tela_sao_paulo.html" method="get" class="stack" style="display:none;">
+        <label for="estado">Cidade</label>
+        <select id="estado" name="estado">
+          <option value="sp">São Paulo</option>
+        </select>
+        <button type="submit" class="btn">Confirmar</button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner footer-3col">
+      <a class="icon-link" href="popup_conversor.html" aria-label="Conversor">
+        <img src="../img/money.png" alt="" aria-hidden="true" />
+      </a>
+
+      <a class="icon-link" href="perfil.html" aria-label="Perfil">
+        <img src="../img/user.png" alt="" aria-hidden="true" />
+      </a>
+    </div>
+  </footer>
 </body>
 </html>
