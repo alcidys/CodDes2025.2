@@ -124,6 +124,24 @@ button:active, .btn:active { transform: translateY(0.1rem); }
     drop-shadow(0 0 0.1rem var(--brazil-outline));
 }
 
+.brasil-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.brasil-link img {
+  width: min(80vw, 50rem);
+  height: auto;
+  display: block;
+}
+
+.brasil-link:hover {
+  transform: scale(1.03); /* leve zoom no hover */
+}
 
 footer {
   width: 100%;
