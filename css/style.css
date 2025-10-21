@@ -717,3 +717,98 @@ footer {
   display: inline; font-size: 1.4rem; color: var(--text); text-decoration: none;
 }
 .footer-center:hover{ text-decoration: underline; }
+
+/* ======== TELA: CURIOSITY ======== */
+.page-curiosity{
+  background: var(--bg-hero);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.curiosity-header{
+  text-align: center;
+  padding-top: var(--space-5);
+}
+
+.curiosity-title{
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: .04em;
+  font-size: 2.6rem;
+}
+
+/* Trilho com bordas azuis, como no mock */
+.card-rail{
+  max-width: 46rem;
+  margin: var(--space-4) auto var(--space-6, 5.6rem);
+  padding-inline: var(--space-3);
+  border-left: .36rem solid #2aa0ff;
+  border-right: .36rem solid #2aa0ff;
+  border-radius: 1.6rem;
+}
+
+/* Lista com bullets */
+.dot-list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 1.8rem;
+  color: #2a2a2a;
+}
+.dot-list li{
+  position: relative;
+  padding-left: 2.2rem;
+  line-height: 1.45;
+}
+.dot-list li::before{
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 2rem;
+  line-height: 1;
+  color: #262626;
+}
+
+/* Botão + Culture (reuso do padrão) */
+.mt-4{ margin-top: var(--space-4); }
+.info-actions{ display: grid; gap: 1.2rem; }
+.info-btn{
+  display: inline-flex;
+  align-items: center;
+  gap: .8rem;
+  font-size: 1.8rem;
+  color: var(--text);
+  text-decoration: none;
+}
+.info-btn:hover{ text-decoration: underline; }
+.info-btn .plus{
+  width: 2rem; height: 2rem;
+  border-radius: 50%;
+  border: .15rem solid #000;
+  position: relative; display: inline-block;
+}
+.info-btn .plus::before,
+.info-btn .plus::after{
+  content:""; position:absolute; left:50%; top:50%;
+  background:#000; transform:translate(-50%,-50%);
+}
+.info-btn .plus::before{ width: 1rem; height: .18rem; }
+.info-btn .plus::after{ width: .18rem; height: 1rem; }
+
+/* Rodapé padrão (já usado nas outras telas) */
+.site-footer{
+  position: fixed; bottom: 0; left: 0; width: 100%;
+  background: transparent; z-index: 1000;
+}
+.footer-bar{
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 1rem 2rem;
+}
+.footer-bar img{ width: 3.2rem; height: auto; }
+.footer-center{
+  display: inline; font-size: 1.4rem; color: var(--text); text-decoration: none;
+}
+.footer-center:hover{ text-decoration: underline; }
