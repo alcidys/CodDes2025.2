@@ -154,3 +154,86 @@ footer {
   .hero-title { font-size: 3rem; }
   .hero-figure.brasil img { width: 34rem; }
 }
+
+/* -------- PERFIL -------- */
+.page-profile { 
+  background: #ffffff;               
+  display: grid;
+  place-items: start center;
+  min-height: 100vh;
+  padding-top: var(--space-5);
+}
+
+.profile {
+  text-align: center;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  max-width: 40rem;
+}
+
+.avatar {
+  width: 9.6rem;
+  height: 9.6rem;
+  margin-inline: auto;
+  border-radius: 50%;
+  background: #e9edf7;              
+  display: grid;
+  place-items: center;
+}
+.avatar img { width: 5.6rem; height: auto; }
+
+.profile-name {
+  margin-top: var(--space-3);
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+}
+
+.input-name{
+  margin-top: var(--space-2);
+  width: 100%;
+  border: 0.1rem solid rgba(0,0,0,.18);
+  border-radius: 0.8rem;
+  padding: 1.2rem 1.4rem;
+}
+
+.profile-sub{
+  margin-top: var(--space-4);
+  font-size: 1.8rem;
+  color: var(--muted);
+}
+
+.vibes{
+  margin-top: var(--space-4);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+  justify-items: center;
+  align-items: center;
+}
+.vibe{
+  font-size: 2.2rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.vibe-explorer{ color: #6aa84f; }  
+.vibe-foodie{   color: #e06666; }  
+.vibe-party{    color: #6fa8dc; grid-column: 1 / -1; } 
+
+.vibe:hover{ text-decoration: underline; }
+
+
+.back-link { margin-top: var(--space-5); }
+.text-link{
+  color: var(--text);
+  text-decoration: none;
+}
+.text-link:hover{ text-decoration: underline; }
+
+
+@media (min-width: 40rem){
+  .profile-name{ font-size: 2.6rem; }
+  .vibe{ font-size: 2.4rem; }
+}

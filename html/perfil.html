@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Perfil</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Perfil</title>
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/style.css" />
 </head>
-<body>
-    <h1>Perfil</h1>
 
-    <img src="../img/user.png" alt="Foto de perfil" width="100">
-    
-    <form>
-        <label for="nome">Digite seu nome:</label><br>
-        <input type="text" id="nome" name="nome" placeholder="Seu nome">
-    </form>
+<body class="page-profile">
+  <main class="container profile card">
+    <div class="avatar">
+      <img src="../img/user.png" alt="Foto de perfil">
+    </div>
 
-    <h2>Selecione sua vibe</h2>
-    <ul>
-        <li><a href="#">Festeiro</a></li>
-        <li><a href="#">Natureza</a></li>
-        <li><a href="#">Descobridor</a></li>
-        <li><a href="#">Conversa</a></li>
-        <li><a href="#">Comidas</a></li>
-        <li><a href="#">História</a></li>
-        <li><a href="#">Outra</a></li>
-    </ul>
+    <h1 class="profile-name">YOUR NAME</h1>
 
-    <p><a href="index.html">Voltar</a></p>
+    <label class="visually-hidden" for="nome">Digite seu nome</label>
+    <input class="input-name" id="nome" name="nome" type="text" placeholder="type your name" />
+
+    <p class="profile-sub">choose your vibe:</p>
+
+    <nav class="vibes">
+      <a class="vibe vibe-explorer" href="#">Explorer</a>
+      <a class="vibe vibe-foodie" href="#">Foodie</a>
+      <a class="vibe vibe-party" href="#">Party Lover</a>
+    </nav>
+
+    <p class="back-link"><a href="index.html" class="text-link">return to the start</a></p>
+  </main>
 </body>
 </html>
