@@ -824,6 +824,7 @@ footer {
   box-sizing: border-box;
 }
 
+/* título e subtítulo */
 .page-explore h1 {
   width: 100%;
   text-align: center;
@@ -831,59 +832,62 @@ footer {
   text-transform: uppercase;
   letter-spacing: .04em;
   font-weight: var(--title-weight);
-  margin: 1.6rem 0 2.4rem;
+  margin: 1.6rem 0 1rem;
   color: var(--text);
 }
 
+.page-explore p {
+  text-align: center;
+  font-size: 1.6rem;
+  color: var(--muted);
+  margin-bottom: var(--space-4);
+}
+
+/* lista de opções como na tela anterior (losangos amarelos) */
 .page-explore ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  width: min(92vw, 56rem);
   display: grid;
-  gap: 1.8rem;
+  gap: var(--space-4);
+  justify-items: center;
   align-items: center;
-  margin-bottom: 8rem; /* espaço para o rodapé fixo */
+  margin-bottom: 8rem; /* espaço pro footer fixo */
 }
 
-/* Botoes */
+/* cada opção é um link horizontal com losango amarelo */
 .page-explore ul li a {
-  display: block;
-  width: 100%;
-  padding: 1rem 1.6rem;
-  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  gap: 1.2rem;
   text-decoration: none;
-  font-size: 2.6rem;
-  font-weight: 600;
+  font-weight: 900;
+  font-size: 2.4rem;
   letter-spacing: .02em;
-  border-radius: 0.8rem;
-  border: 0.12rem solid rgba(0,0,0,.18);
-  box-shadow: 0 0.4rem 0.6rem rgba(0,0,0,0.10);
-  color: #000;
-  transition: transform .12s ease, filter .12s ease, box-shadow .12s ease;
-  white-space: normal;
-  line-height: 1.1;
+  color: var(--text);
+  text-transform: uppercase;
+  transition: transform .12s ease, filter .12s ease;
 }
 
-.page-explore ul li:nth-child(odd) a {
-  background: color-mix(in srgb, var(--brand) 60%, white 40%);
+/* losango amarelo (igual city-option) */
+.page-explore ul li a::before {
+  content: "";
+  width: 1.2rem;
+  height: 1.2rem;
+  background: #e7ff49;
+  transform: rotate(45deg);
+  border-radius: .12rem;
+  box-shadow: 0 0 0 .12rem rgba(0,0,0,.08);
 }
 
-.page-explore ul li:nth-child(even) a {
-  background: color-mix(in srgb, var(--brazil-green) 60%, white 40%);
-}
-
+/* animação leve ao passar o mouse */
 .page-explore ul li a:hover {
-  transform: translateY(-0.12rem);
-  filter: brightness(1.03);
-  box-shadow: 0 0.8rem 1.2rem rgba(0,0,0,0.12);
+  transform: translateY(-0.1rem);
+  text-decoration: underline;
+  filter: brightness(1.05);
 }
 
-.page-explore ul li a:active {
-  transform: translateY(0.05rem);
-}
-
-/* Rodape */
+/* rodapé fixo com ícones e link central */
 .page-explore nav {
   position: fixed;
   left: 0;
@@ -904,11 +908,10 @@ footer {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: .6rem;
   color: var(--text);
 }
 
-/* icones laterais fixos */
+/* ícones laterais fixos */
 .page-explore nav a img {
   width: 5.2rem;
   height: auto;
@@ -919,6 +922,7 @@ footer {
   box-shadow: 0 0.3rem 0.6rem rgba(0,0,0,0.10);
 }
 
+/* link central (return to the start) */
 .page-explore .footer-center {
   position: fixed;
   left: 50%;
