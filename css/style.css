@@ -936,3 +936,119 @@ footer {
   z-index: 1210;
   text-align: center;
 }
+
+/* ======== TELA: EXPLORAR CATEGORIAS ======== */
+.page-explore-categories {
+  background: var(--bg-hero);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--space-5) 1.6rem 8.4rem;
+  box-sizing: border-box;
+}
+
+.page-explore-categories h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  font-weight: var(--title-weight);
+  margin: 1.6rem 0 2.4rem;
+  color: var(--text);
+}
+
+.page-explore-categories ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: min(92vw, 56rem);
+  display: grid;
+  gap: 1.6rem;
+  align-items: center;
+  margin-bottom: 8rem; /* espaço para o rodapé fixo */
+}
+
+/* cada item é um quadrado colorido */
+.page-explore-categories ul li a {
+  display: block;
+  width: 100%;
+  padding: 1.4rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2.6rem;
+  font-weight: 700;
+  letter-spacing: .02em;
+  border-radius: 0.8rem;
+  border: 0.1rem solid rgba(0,0,0,0.2);
+  box-shadow: 0 0.4rem 0.8rem rgba(0,0,0,0.10);
+  color: #000;
+  transition: transform .12s ease, filter .12s ease, box-shadow .12s ease;
+}
+
+/* cores alternadas */
+.page-explore-categories ul li:nth-child(odd) a {
+  background: color-mix(in srgb, var(--brand) 65%, white 35%);
+}
+.page-explore-categories ul li:nth-child(even) a {
+  background: color-mix(in srgb, var(--brazil-green) 65%, white 35%);
+}
+
+/* hover */
+.page-explore-categories ul li a:hover {
+  transform: translateY(-0.1rem);
+  filter: brightness(1.05);
+  box-shadow: 0 0.8rem 1.4rem rgba(0,0,0,0.12);
+}
+.page-explore-categories ul li a:active {
+  transform: translateY(0.05rem);
+}
+
+
+.page-explore-categories nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2.4rem;
+  background: transparent;
+  pointer-events: none;
+  z-index: 1200;
+}
+
+.page-explore-categories nav a {
+  pointer-events: auto;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text);
+}
+
+.page-explore-categories nav a img {
+  width: 5.2rem;
+  height: auto;
+  object-fit: contain;
+  background: transparent;
+  border-radius: 50%;
+  padding: 0.3rem;
+  box-shadow: 0 0.3rem 0.6rem rgba(0,0,0,0.10);
+}
+
+.page-explore-categories .footer-center {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2.2rem;
+  font-size: 2rem;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+  pointer-events: auto;
+  z-index: 1210;
+  text-align: center;
+}
