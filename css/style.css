@@ -989,13 +989,13 @@ footer {
 
 /* cores alternadas */
 .page-explore-categories ul li:nth-child(odd) a {
-  background: #59aeb4;
-  background: color-mix(in srgb, var(--brand) 65%, white 35%);
+  background: var(--brand);
+  opacity: 0.85;
 }
 
 .page-explore-categories ul li:nth-child(even) a {
-  background: #95cc99;
-  background: color-mix(in srgb, var(--brazil-green) 65%, white 35%);
+  background: var(--brazil-green);
+  opacity: 0.85;
 }
 
 
